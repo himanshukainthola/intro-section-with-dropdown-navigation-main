@@ -24,14 +24,22 @@
     <nav class="navbar__menu" id="menu" data-visible="false">
       <ul class="navbar__menu--list">
         <li class="navbar__menu--links dropdown" data-dropdown>
-          <a href="#" class="dropdown--link" data-dropdown-button>Features <img src="images/icon-arrow-down.svg"></a>
-          <div class="dropdown-menu">
-            dropdown content
+          <a class="dropdown--link" data-dropdown-button> Features
+            <img src="images/icon-arrow-down.svg"></a>
+          <div class="dropdown-menu" dropzone="Features">
+            <a href="#"><img src="images/icon-todo.svg" alt="Todo"> Todo List</a>
+            <a href="#"><img src="images/icon-calendar.svg" alt="Calendar"> Calendar</a>
+            <a href="#"><img src="images/icon-reminders.svg" alt="Reminders"> Reminders</a>
+            <a href="#"><img src="images/icon-planning.svg" alt="Planning"> Planning</a>
           </div>
         </li>
-        <li class="navbar__menu--links dropdown">
-          <a href="#" class="dropdown--link" data-dropdown-button><span>Company</span> <img
-              src="images/icon-arrow-down.svg"></a>
+        <li class="navbar__menu--links dropdown" data-dropdown>
+          <a class="dropdown--link" data-dropdown-button>Company <img src="images/icon-arrow-down.svg"></a>
+          <div class="dropdown-menu">
+            <a href="#">History</a>
+            <a href="#">Our Team </a>
+            <a href="#">Blog</a>
+          </div>
         </li>
         <li class="navbar__menu--links"><a href="#">Careers</a></li>
         <li class="navbar__menu--links"><a href="#">About</a></li>
@@ -44,7 +52,7 @@
   </header>
   <Main class="hero">
     <picture>
-      <source srcset="images/image-hero-desktop.png" media="(min-width: 768px)">
+      <source srcset="images/image-hero-desktop.png" media="(min-width: 870px)">
       <img src="images/image-hero-mobile.png" alt="hero image">
     </picture>
     <section class="hero__content">
